@@ -37,6 +37,11 @@ cube(`Logs`, {
       sql: `data`,
       type: `string`
     },
+
+    eventName: {
+      sql: `substring(topic0, 1, 10)`,
+      type: `string`
+    },
     
     topic0: {
       sql: `topic0`,

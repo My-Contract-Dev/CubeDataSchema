@@ -62,6 +62,11 @@ cube(`Transactions`, {
       sql: `input`,
       type: `string`
     },
+
+    callsign: {
+      sql: `substring(input, 1, 10)`,
+      type: `string`
+    },
     
     receiptContractAddress: {
       sql: `receipt_contract_address`,
