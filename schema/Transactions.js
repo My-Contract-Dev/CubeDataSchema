@@ -34,6 +34,11 @@ cube(`Transactions`, {
     receiptEffectiveGasPrice: {
       sql: `receipt_effective_gas_price`,
       type: `sum`
+    },
+
+    fromAddressesCount: {
+      sql: `from_address`,
+      type: 'countDistinct'
     }
   },
   
