@@ -20,6 +20,16 @@ cube(`Transactions`, {
       sql: `value`,
       type: `sum`
     },
+
+    gas: {
+      sql: `gas`,
+      type: `sum`
+    },
+
+    averageGas: {
+      sql: `gas`,
+      type: `avg`
+    },
     
     gasPrice: {
       sql: `gas_price`,
